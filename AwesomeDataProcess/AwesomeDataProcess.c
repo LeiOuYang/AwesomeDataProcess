@@ -22,6 +22,27 @@ BOOL memery_set(char* src, unsigned int len, char value)
 
 /*************** 字符串处理函数 *************/
 
+
+/*  字符串长度计算，以'\0'为结束符 
+*   输入参数： 
+*		const char* str -> 待需计算的字符串长度的原字符串 
+*   返回值： 
+*		字符串长度,不包括字符串结束符'\0' 
+*/
+unsigned int string_len(const char* str)
+{
+	unsigned int len = 0;
+	
+	if((void*)0 == str) return 0;
+	
+	while(*str)
+	{
+		++len;
+		++str;
+	}
+	return len;
+} 
+
 /* 字符串复制
 *  将原始字符串复制的另一个字符串中，结束符为'\0' 
 *  需保正目标字符串空间足够

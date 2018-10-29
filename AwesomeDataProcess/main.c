@@ -23,5 +23,9 @@ int main(int argc, char *argv[])
 	nmea0183_crc_str(dest, nmea);
 	printf("%s\n", dest);
 	
+	printf("str len = %d\n", string_len("Hello"));
+	
+	
+	
 	return 0;
 }

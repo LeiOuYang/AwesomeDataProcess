@@ -20,6 +20,7 @@ typedef unsigned char BOOL;
 BOOL memery_set(char* src, unsigned int len, char value); 
 
 /*************** ×Ö·û´®´¦Àíº¯Êý *************/
+unsigned int string_len(const char* str);
 BOOL string_copy(char* dest, const char* src);
 BOOL string_copy_len(char* dest, const char* src, unsigned int len);
 
